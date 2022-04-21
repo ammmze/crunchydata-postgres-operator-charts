@@ -1,0 +1,17 @@
+name: Rebase Upstream
+on:
+  workflow_dispatch: # run manually
+  schedule:
+    - cron: "0 0 * * 0" # run once a week
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 10 # greater than the number of commits you made
+      - uses: imba-tjd/rebase-upstream-action@0.5
+        with:
+          upstream: CrunchyData/postgres-operator-examples
+          branch: main
