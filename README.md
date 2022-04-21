@@ -17,3 +17,22 @@ You can find the full [PGO documentation](https://access.crunchydata.com/documen
 You can find out more information about [PGO](https://github.com/CrunchyData/postgres-operator), the [Postgres Operator](https://github.com/CrunchyData/postgres-operator) from [Crunchy Data](https://www.crunchydata.com) at the project page:
 
 [https://github.com/CrunchyData/postgres-operator](https://github.com/CrunchyData/postgres-operator)
+
+## Helm Install
+
+### Add repository
+
+```shell
+helm repo add crunchydata-pgo-charts https://ammmze.github.io/crunchydata-postgres-operator-charts
+```
+
+### Install pgo (i.e. postgres operator)
+
+```shell
+helm install pgo crunchydata-pgo-charts/pgo
+```
+### Install a postgresql cluster
+
+```shell
+helm install pgo crunchydata-pgo-charts/postgrescluster
+```
