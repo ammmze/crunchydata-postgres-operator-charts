@@ -2,6 +2,17 @@ apiVersion: v1
 entries:
   pgo:
   - apiVersion: v2
+    appVersion: 5.3.0
+    created: "2023-01-21T19:59:50.990086607Z"
+    description: Installer for PGO, the open source Postgres Operator from Crunchy
+      Data
+    digest: abac9d5872e7f1fceda2d1ad489b043d8f47b8fb43db5bdffad96761c70042f7
+    name: pgo
+    type: application
+    urls:
+    - https://github.com/ammmze/crunchydata-postgres-operator-charts/releases/download/pgo-5.3.0/pgo-5.3.0.tgz
+    version: 5.3.0
+  - apiVersion: v2
     appVersion: 5.2.0
     created: "2022-10-15T00:11:06.352547555Z"
     description: Installer for PGO, the open source Postgres Operator from Crunchy
@@ -25,6 +36,16 @@ entries:
     version: 0.2.5
   postgrescluster:
   - apiVersion: v2
+    appVersion: 5.3.0
+    created: "2023-01-21T19:59:51.191035385Z"
+    description: A Helm chart for Kubernetes
+    digest: 639c5e5234f9441ac8b151c27cca7aa292266a9207644861e9db6e3c35e25319
+    name: postgrescluster
+    type: application
+    urls:
+    - https://github.com/ammmze/crunchydata-postgres-operator-charts/releases/download/postgrescluster-5.3.0/postgrescluster-5.3.0.tgz
+    version: 5.3.0
+  - apiVersion: v2
     appVersion: 5.2.0
     created: "2022-10-15T00:11:06.473527819Z"
     description: A Helm chart for Kubernetes
@@ -44,4 +65,4 @@ entries:
     urls:
     - https://github.com/ammmze/crunchydata-postgres-operator-charts/releases/download/postgrescluster-0.2.2/postgrescluster-0.2.2.tgz
     version: 0.2.2
-generated: "2022-10-15T00:11:06.473541919Z"
+generated: "2023-01-21T19:59:51.191056286Z"
